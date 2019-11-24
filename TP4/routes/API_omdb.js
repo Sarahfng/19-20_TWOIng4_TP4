@@ -1,4 +1,4 @@
-const axios = require('axios');
+const axios = require('axios').default;
 
 // Clé api
 const API_KEY = "3cd9444b";
@@ -19,3 +19,5 @@ class API_omdb{
             })
     }
 }
+
+module.exports = API_omdb;
