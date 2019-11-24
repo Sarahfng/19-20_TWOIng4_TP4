@@ -1,0 +1,21 @@
+const axios = require('axios');
+
+// Clé api
+const API_KEY = "3cd9444b";
+// Url API
+const API_URL = "http://www.omdbapi.com/";
+
+
+class API_omdb{
+    constructor(){
+    }
+
+    // Faire la requete à l'API omdb
+    // Retourne une promise
+    fetchMovieTitle(movieTitle){
+        return axios
+            .get(`${API_URL}?t=${movieTitle}&apikey=${API_KEY}`, {
+                crossdomain: true
+            })
+    }
+}
