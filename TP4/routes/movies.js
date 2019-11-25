@@ -115,7 +115,7 @@ router.post('/:id', (req, res) => {
     movieSelected.yearOfRelease = parseInt(modifiedMovieYear);
 
     res.status(200).json({
-        message: `L'année du film #${movieSelected.movie} a été modifié`
+        message: `L'année du film ${movieSelected.movie} a été modifié`
     })
 });
 
